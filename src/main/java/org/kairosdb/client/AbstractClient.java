@@ -118,6 +118,13 @@ public abstract class AbstractClient implements Client
 		return response;
 	}
 
+    @Override
+    public Response delete(QueryBuilder builder) throws URISyntaxException, IOException
+    {
+        checkNotNull(builder);
+        return post(builder.build(), getURLBase() + "/api/v1/datapoints/delete");
+    }
+
 	@Override
 	public Response pushMetrics(MetricBuilder builder) throws URISyntaxException, IOException
 	{

@@ -60,6 +60,8 @@ public interface Client
 	 */
 	QueryResponse query(QueryBuilder builder) throws URISyntaxException, IOException;
 
+    Response delete(QueryBuilder builder) throws URISyntaxException, IOException;
+
 	/**
 	 * Sends metrics from the builder to the Kairos server.
 	 *
