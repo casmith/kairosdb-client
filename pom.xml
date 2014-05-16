@@ -57,6 +57,9 @@
 
     <scm>
         <connection>scm:git:https://github.com/casmith/kairosdb-client.git</connection>
+        <developerConnection>scm:git:https://github.com/casmith/kairosdb-client.git</developerConnection>
+        <url>https://github.com/casmith/kairosdb-client.git</url>
+        <tag>HEAD</tag>
     </scm>
 
 	<build>
