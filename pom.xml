@@ -90,6 +90,15 @@
 					</execution>
 				</executions>
 			</plugin>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <!-- deployment in this case is to the local repo which is
+                    shared via https; no need for deploy goal
+                    -->
+                    <goals>install</goals>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
 </project>
