@@ -55,6 +55,10 @@
 		</dependency>
 	</dependencies>
 
+    <scm>
+        <connection>scm:svn:https://github.com/casmith/kairosdb-client.git</connection>
+    </scm>
+
 	<build>
 		<plugins>
 			<plugin>
